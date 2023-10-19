@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:"Circular Std";
+}
+
+:root {
+    --Verde:#46D7AB;
+    --outro-verde:#57e1c1eb;
+    --vermelho:#FB6C6C;
+    --rosa: #ee8282;
+    --azul:#4676A4;
+    --amarelo:#FFB87D;
+    --amarelo-claro:#ffcca1;
+    --branco:#ffffff;
+    --cinza:#E5E5E5;
+    --preto:#303943;
+    --verde-escuro:#3E8570;
+    --vermelho-escuro:#DE5050;
+    --azul-escuro:#4689C7;
+    --outro-azul:#66aef2;
+    --amarelo-escuro:#FBCD66;
+}
+
+
+body {
+    background-color: var(--branco);
+}
+
+/* Header */
+
+header {
+    background-image: url(../img/pokeball.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 12rem;
+
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.imagem_lista {
+
+    margin-right: 1.8rem;
+    margin-bottom: 3.5rem;
+}
+
+.botao_voltar {
+    margin-left: 1.8rem;
+    margin-bottom: 3.5rem;
+}
+
+#pokedex {
+    margin-left: 1.8rem;
+    transform: translate(0, -300%);
+}
+
+/* Cards */
+
+.pokemon_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0 1rem;
+
+}
+
+.pokemon {
+    width: 155px;
+    height: 110px;
+    background-image: url(../img/Subtract.png) !important;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: var(--verde-escuro);
+    display: flex;
+    text-align: center;
+    border-radius: 1rem;
+    transform: translate(0, -50%);
+    margin: 0 auto;
+    
+}
+
+
+
+
+.image_pokemon {
+    position: absolute;
+    top: 2rem;
+    left: 5rem;
+    max-width: 76px;
+    max-height: 71px;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.numero {
+    margin-top: 0.5rem;
+    position: absolute;
+    align-self: end;
+    right: 1rem;
+    color: var(--branco);
+}
+
+.nome {
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    color: var(--branco);
+    font-size: 1rem;
+}
+
+.tipo {
+    border-radius: 1rem;
+    font-size: 0.5rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 16px;
+    margin: 0.5rem 0 0.5rem 0.5rem;
+    padding: 0.3rem;
+}
